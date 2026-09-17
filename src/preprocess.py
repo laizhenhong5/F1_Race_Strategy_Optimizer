@@ -94,12 +94,12 @@ print(
 )
 
 print(
-    f"Pit-in laps removed: "
+    f"Pit-lane entry-marked laps removed: "
     f"{pit_in_lap.sum()}"
 )
 
 print(
-    f"Pit-out laps removed: "
+    f"Pit-lane exit-marked laps removed: "
     f"{pit_out_lap.sum()}"
 )
 

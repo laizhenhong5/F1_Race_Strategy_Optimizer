@@ -13,6 +13,9 @@ INPUT_FILES = [
     "data/normal_racing_laps_barcelona_catalunya_2025.csv",
     "data/normal_racing_laps_canada_2025.csv",
     "data/normal_racing_laps_singapore_2025.csv",
+    "data/normal_racing_laps_antonelli_bahrain_2025.csv",
+    "data/normal_racing_laps_antonelli_japan_2025.csv",
+    "data/normal_racing_laps_antonelli_canada_2025.csv",
 ]
 
 MIN_STINT_LAPS = 5
@@ -24,11 +27,8 @@ MIN_STINT_LAPS = 5
 datasets = []
 
 for file in INPUT_FILES:
-
     print(f"Loading: {file}")
-
     df = pd.read_csv(file)
-
     datasets.append(df)
 
 
@@ -41,7 +41,6 @@ combined_df = pd.concat(
 print("\n========================================")
 print("DATASET")
 print("========================================")
-
 print(
     f"Total normal-racing laps: "
     f"{len(combined_df)}"
@@ -158,6 +157,7 @@ print(
         [
             "Year",
             "GrandPrix",
+            "Driver",
             "Stint",
             "Compound",
             "Laps",

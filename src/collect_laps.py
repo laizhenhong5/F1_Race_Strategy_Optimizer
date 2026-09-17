@@ -14,8 +14,8 @@ YEAR = 2025
 FASTF1_EVENT = "Canada"
 GRAND_PRIX = "Canada"
 SESSION = "R"
-DRIVER = "RUS"
-OUTPUT_FILE = "data/cleaned_russell_canada_2025.csv"
+DRIVER = "ANT"
+OUTPUT_FILE = "data/cleaned_antonelli_canada_2025.csv"
 
 #DEFAULT COLLECT SETTINGS
 # YEAR = 2025
