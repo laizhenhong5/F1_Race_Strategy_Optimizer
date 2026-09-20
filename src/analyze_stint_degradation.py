@@ -16,6 +16,10 @@ INPUT_FILES = [
     "data/normal_racing_laps_antonelli_bahrain_2025.csv",
     "data/normal_racing_laps_antonelli_japan_2025.csv",
     "data/normal_racing_laps_antonelli_canada_2025.csv",
+    "data/normal_racing_laps_antonelli_barcelona_catalunya_2025.csv",
+    "data/normal_racing_laps_antonelli_emilia_romagna_2025.csv",
+    "data/normal_racing_laps_antonelli_miami_2025_repaired.csv",
+    "data/normal_racing_laps_antonelli_singapore_2025.csv",
 ]
 
 MIN_STINT_LAPS = 5

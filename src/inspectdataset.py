@@ -12,10 +12,7 @@
 # print("\nMissing values:")
 # print(df.isnull().sum())
 import argparse
-
 import pandas as pd
-
-
 # ============================================================
 # COMMAND-LINE SETTINGS
 # ============================================================
@@ -74,19 +71,16 @@ if "GrandPrix" in df.columns:
     print("\nRaces:")
     print(df["GrandPrix"].unique())
 
-
 # ============================================================
 # TYRE COMPOUNDS
 # ============================================================
 
 if "Compound" in df.columns:
-
     print("\nCompound counts:")
     print(
         df["Compound"]
         .value_counts(dropna=False)
     )
-
 
 # ============================================================
 # TRACK STATUS
@@ -175,11 +169,14 @@ print("========================================")
 unusual = df[
     df["LapTimeSeconds"] > 100
 ].copy()
-unusual["LapType"] = "Normal"
+unusual["LapType"] = "Unclassified Slow Lap"
 #check does pit in time exist or not
 # Opening lap
+# Only Lap 1 can actually be the opening lap.
+# Preprocessed datasets normally have Lap 1 removed,
+# so this condition will simply do nothing in that case.
 unusual.loc[
-    unusual["LapNumber"] == unusual["LapNumber"].min(),
+    unusual["LapNumber"] == 1,
     "LapType"
 ] = "Opening Lap"
 

@@ -11,11 +11,11 @@ import pandas as pd
 
 #These settings here are for the 2025 Spanish GP, Russell's race OR NEW ONES AFTER SPANISH/BARCELONA
 YEAR = 2025
-FASTF1_EVENT = "Canada"
-GRAND_PRIX = "Canada"
+FASTF1_EVENT = "Singapore"
+GRAND_PRIX = "Singapore"
 SESSION = "R"
 DRIVER = "ANT"
-OUTPUT_FILE = "data/cleaned_antonelli_canada_2025.csv"
+OUTPUT_FILE = "data/cleaned_antonelli_singapore_2025.csv"
 
 #DEFAULT COLLECT SETTINGS
 # YEAR = 2025
